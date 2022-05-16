@@ -9,5 +9,45 @@ Dividete bene in classi e implementate gli attributi e i metodi necessari per il
 BONUS:
 Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibili solo in un periodo particolare (es. da maggio ad agosto).
 */
+require_once __DIR__ . '/utent.php';
+require_once __DIR__ . '/registered.php';
+
+
+$userOne = new utent('luca', 'rossi', 'userOne@gmail.com' , true);
+
+
+$userOne->email();
+$userOne -> validCard ('2020');
+$userOne-> getDiscount();
+
+echo var_dump($userOne) . "</br>"; 
+
+$userTwo = new utent('paolo', 'verdi', 'userTwo@gmail.com' , true);
+
+
+$userTwo->email();
+$userTwo -> validCard ('2025');
+$userTwo-> getDiscount();
+
+echo var_dump($userTwo) . "</br>";
+
+
+$userThree = new utent('alessandro', 'barca', 'userThree@gmail.com' , false);
+
+
+$userThree->email();
+$userThree -> validCard ('2020');
+$userThree-> getDiscount();
+
+echo var_dump($userThree) . "</br>";
+
+$userFour = new utent('paolo', 'russo', 'userFour@gmail.com' , false);
+
+
+$userFour->email();
+$userFour -> validCard ('2025');
+$userFour-> getDiscount();
+
+echo var_dump($userFour) . "</br>";
 
 ?>
