@@ -8,7 +8,7 @@ class utent {
     public $surname;
     public $registered ;
     public $discount = 0;
-    public $expiredCard;
+    public $expiredCard ;
 
     public $email;
 
@@ -24,7 +24,7 @@ function __construct($_name, $_surname, $_email, $_registered)
 public function validCard($expiredCard) {
     if (is_numeric($expiredCard) && $expiredCard <= 2022) {
         return
-        $this-> expiredCard =  'La tua carta è valida!' ;
+        $this-> expiredCard  = ' La tua carta è valida!' ;
     } else {
         return $this -> expiredCard = ' La tua carta è scaduta!!';
     }
