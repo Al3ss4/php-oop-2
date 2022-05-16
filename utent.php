@@ -1,5 +1,7 @@
 <?php
 
+include __DIR__ . '/card.php';
+
 class utent {
     public $email;
     public $card;
