@@ -25,7 +25,6 @@ public function validCard($expiredCard) {
     if (is_numeric($expiredCard) && $expiredCard <= 2022) {
         $this->expiredCard = $expiredCard;
     }
-    else return 'Error - Card Expired';
 }
 public function utentEmail($email) {
     $this->email = $email;
