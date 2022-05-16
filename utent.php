@@ -35,7 +35,7 @@ public function email() {
 }
 
 public function getDiscount() {
-    if ($this->registered = false) {
+    if ($this->registered === false) {
         $this->discount = 0;
        
     }
