@@ -23,8 +23,12 @@ function __construct($_name, $_surname, $_email, $_registered)
 
 public function validCard($expiredCard) {
     if (is_numeric($expiredCard) && $expiredCard <= 2022) {
-        $this->expiredCard = $expiredCard;
+        return
+        $this-> expiredCard =  'La tua carta è valida!' ;
+    } else {
+        return $this -> expiredCard = ' La tua carta è scaduta!!';
     }
+    
 }
 public function utentEmail($email) {
     $this->email = $email;
